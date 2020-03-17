@@ -1,0 +1,13 @@
+/*
+Carson Perreaux, 85322311
+Ryan Hughes, 34193284
+COSC360 - Project
+*/
+
+html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, div, p, img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}

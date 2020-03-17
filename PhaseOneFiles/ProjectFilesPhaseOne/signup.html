@@ -1,0 +1,247 @@
+<!-- 
+    Carson Perreux, 85322311
+    Ryan Hughes, 34193284
+    COSC 360 - Project 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Gamer Forums</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/signup.css">
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img id="logo" src="images/gf-logo.png" alt="Gamer Forums Logo" title="Gamer Forums"></a>
+            <p id="header-name">Sign Up</p>
+        </header>
+        <div id="main">
+            <!-- Main content here -->
+            <p><a href="login.html" id="back">Back to Login</a></p>
+            <form method="POST" action="profile.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label>First Name:</label>
+                        <input type="text" name="firstname"/>
+                        <label>Last Name:</label>
+                        <input type="text" name="lastname"/><br>
+                    </p>
+                    <p>
+                        <label>Display Name:</label>
+                        <input type="text" name="displayname"> (This is the name that will be displayed when you post, comment, etc.)<br>
+                    </p>
+                    <p>
+                        <label>Email:</label>
+                        <input type="text" name="email" pattern="[^ @]*@[^ @]*" required><br>
+                        <label>Password:</label>
+                        <input type="password" name="password"><br>
+                        <label>Confirm Password:</label>
+                        <input type="password" name="confirm-password"><br>
+                    </p>
+                    <p>
+                        <label>Date of Birth:</label><br>
+                        <select name="month">
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <select name="day">
+                            <option>Day</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select name="year">
+                            <option>Year</option>
+                            <option>2007</option>
+                            <option>2006</option>
+                            <option>2005</option>
+                            <option>2004</option>
+                            <option>2003</option>
+                            <option>2002</option>
+                            <option>2001</option>
+                            <option>2000</option>
+                            <option>1999</option>
+                            <option>1998</option>
+                            <option>1997</option>
+                            <option>1996</option>
+                            <option>1995</option>
+                            <option>1994</option>
+                            <option>1993</option>
+                            <option>1992</option>
+                            <option>1991</option>
+                            <option>1990</option>
+                            <option>1989</option>
+                            <option>1988</option>
+                            <option>1987</option>
+                            <option>1986</option>
+                            <option>1985</option>
+                            <option>1984</option>
+                            <option>1983</option>
+                            <option>1982</option>
+                            <option>1981</option>
+                            <option>1980</option>
+                            <option>1979</option>
+                            <option>1978</option>
+                            <option>1977</option>
+                            <option>1976</option>
+                            <option>1975</option>
+                            <option>1974</option>
+                            <option>1973</option>
+                            <option>1972</option>
+                            <option>1971</option>
+                            <option>1970</option>
+                            <option>1969</option>
+                            <option>1968</option>
+                            <option>1967</option>
+                            <option>1966</option>
+                            <option>1965</option>
+                            <option>1964</option>
+                            <option>1963</option>
+                            <option>1962</option>
+                            <option>1961</option>
+                            <option>1960</option>
+                            <option>1959</option>
+                            <option>1958</option>
+                            <option>1957</option>
+                            <option>1956</option>
+                            <option>1955</option>
+                            <option>1954</option>
+                            <option>1953</option>
+                            <option>1952</option>
+                            <option>1951</option>
+                            <option>1950</option>
+                            <option>1949</option>
+                            <option>1948</option>
+                            <option>1947</option>
+                            <option>1946</option>
+                            <option>1945</option>
+                            <option>1944</option>
+                            <option>1943</option>
+                            <option>1942</option>
+                            <option>1941</option>
+                            <option>1940</option>
+                            <option>1939</option>
+                            <option>1938</option>
+                            <option>1937</option>
+                            <option>1936</option>
+                            <option>1935</option>
+                            <option>1934</option>
+                            <option>1933</option>
+                            <option>1932</option>
+                            <option>1931</option>
+                            <option>1930</option>
+                            <option>1929</option>
+                            <option>1928</option>
+                            <option>1927</option>
+                            <option>1926</option>
+                            <option>1925</option>
+                            <option>1924</option>
+                            <option>1923</option>
+                            <option>1922</option>
+                            <option>1921</option>
+                            <option>1920</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Country:</label>
+                        <select name="country">
+                            <option>Choose a Counrty</option>
+                            <option>Austrailia</option>
+                            <option>Canada</option>
+                            <option>China</option>
+                            <option>England</option>
+                            <option>Ireland</option>
+                            <option>Mexico</option>
+                            <option>North Korea</option>
+                            <option>South Korea</option>
+                            <option>United States</option>
+                            <option>Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Gender:</label>
+                        <select name="gender">
+                            <option>Select a Gender</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <option>Rather not say</option>
+                            <option>Other</option>
+                        </select>
+                        <label>Other:</label>
+                        <input type="text" name="other">
+                    </p>
+                    <p>
+                        <input type="checkbox" name="terms" value="terms"> I agree to the Terms and Agreements.<br>
+                    </p>
+                    <p>
+                    <input type="submit" value="Create Account" name="create-account">
+                    </p>
+                </fieldset>
+            </form>
+
+
+
+
+
+        </div>
+    </body>
+    <!-- <footer>
+        <div id="contact">
+            <p>Email</p>
+            <a href="mailto:gamerforumscontact@gmail.com">gamerforumscontact@gmail.com</a>
+        </div>
+        <div id="socials">
+            <p>Social Media Links</p>
+            <div id="social-icons">
+                <a href="https://www.facebook.com"><img id="center-img" class="social-img" src="images/FacebookIcon.png" alt="Facebook Icon" title="Facebook"></a>
+                <a href="https://www.instagram.com"><img class="social-img" src="images/InstagramIcon.png" alt="Instagram Icon" title="Instagram"></a>
+                <a href="https://www.twitter.com"><img class="social-img" src="images/TwitterIcon.png" alt="Twitter Icon" title="Twitter"></a>
+                <a href="https://www.youtube.com"><img class="social-img" src="images/YouTubeIcon.png" alt="YouTube Icon" title="YouTube"></a>
+            </div>
+        </div>
+        <div id="copy">
+            Copyright &copy; Gamer Forums, <time datetime="2020-01-01"><em>January 01, 2020</em></time>
+        </div>
+    </footer> -->
+</html>

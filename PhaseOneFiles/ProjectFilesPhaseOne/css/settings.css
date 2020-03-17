@@ -1,0 +1,179 @@
+/*
+Carson Perreaux, 85322311
+Ryan Hughes, 34193284
+COSC360 - Project
+
+Colors: 
+Babe Blue: #00AEEF
+Dark Grey: #414042
+Medium Grey: #A7A9AC
+Light Grey: #D1D3D4
+*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+#logo {
+    width: 72px;
+    height: 72px;
+    float: left;
+    padding: 12px;
+    background-color: #414042;
+}
+
+#profile {
+    width: 72px;
+    height: 72px;
+    float: right;
+    padding: 12px;
+    background-color: #414042;
+}
+
+header {
+    overflow: auto;
+    clear: both;
+}
+
+#mainNav ul {
+    padding-top: 72px;
+}
+
+#mainNav ul li {
+    clear: left;
+    display: inline;
+    margin-left: 2em;
+    background-color: #414042;
+    border-radius: 8px 8px 0px 0px;
+    padding: 6px;
+}
+
+#mainNav ul li:hover {
+    background-color: grey;
+}
+
+#mainNav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-img {
+    height: 72px;
+    width: 72px;
+}
+
+header {
+    background-color: #A7A9AC;
+}
+
+/* body content here */
+
+/* you can delete this */
+#placeholder {
+    height: 1080px;
+}
+
+#settings {
+    width: 200px;
+    float: left;
+    height:600px;
+    background-color: #2e2e2e;
+}
+
+#settings nav {
+    height:100%;
+}
+
+#settings nav ul {
+    padding-top: 0px;
+}
+
+#settings nav ul li {
+    clear: none;
+    display: block;
+    margin: 0px;
+    background-color: #333333;
+    border-radius: 0px;
+    padding: 1em;
+}
+
+#settings nav ul li:hover {
+    background-color: #3e3e3e;
+}
+
+#settings nav ul li a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+#settings .current {
+    background-color: #666666;
+}
+
+#settings .current:hover {
+    background-color: #666666;
+}
+
+
+
+
+footer {
+    background-color: #414042;
+    overflow: auto;
+    clear: left;
+}
+
+footer #contact {
+    float: left;
+    width: 50%;
+    margin-top: 16px;
+}
+
+footer p {
+    color: #00AEEF;
+    text-align: center;
+}
+
+footer #contact a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+footer #socials {
+    float: right;
+    width: 49%;
+    border-left: 1px solid #00AEEF;
+    margin: 16px 0;
+}
+
+footer #social-icons a {
+    margin-left: 5%;
+}
+footer #social-icons {
+    margin-top: 8px;
+}
+
+footer #social-icons a #center-img {
+    margin-left: 27%;
+}
+
+footer #social-icons a img {
+    height: 32px;
+    width: 32px;
+}
+
+footer #copy {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+    margin: 0.5em 0;
+    color: #A7A9AC;
+}
