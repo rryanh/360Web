@@ -12,6 +12,19 @@
         <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
+    <?php
+    $hostname = 'localhost';
+    $username = 'db_admin';
+    $password = 'test';
+    try {
+        $dbh = new PDO("mysql:host=$hostname;dbname=360web", $username, $password);
+        echo 'Connected to database';
+        }
+    catch(PDOException $e)
+        {
+        echo $e->getMessage();
+        }
+?>
         <header>
             <a href="home.html"><img id="logo" src="images/gf-logo.png" alt="Gamer Forums Logo" title="Gamer Forums"></a>
             <p id="header-name">Log in</p>
@@ -28,6 +41,21 @@
                     <input type="submit" value="Log in" name="login">
                     <p class="linked">Forget your password? <a href="forgot-password.html">Click Here</a></p>
                     <p class="linked">Don't have an account? <a href="signup.html">Create One</a>!</p>
+                    <?php
+                            $hostname = 'localhost';
+                            $username = 'db_admin';
+                            $password = 'test';
+                            try {
+                                $dbh = new PDO("mysql:host=$hostname;dbname=360web", $username, $password);
+                                echo 'Connected to database';
+                                }
+                            catch(PDOException $e)
+                                {
+                                echo $e->getMessage();
+                                }
+                            $sql = "SELECT * FROM login WHERE Id=";
+                            $result = $dbh->query($sql);
+                    ?>
                 </fieldset>
             </form>
 
