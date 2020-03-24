@@ -9,7 +9,10 @@ Dark Grey: #414042
 Medium Grey: #A7A9AC
 Light Grey: #D1D3D4
 */
-
+.error{
+    background-color: red;
+    text-align: center;
+}
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
