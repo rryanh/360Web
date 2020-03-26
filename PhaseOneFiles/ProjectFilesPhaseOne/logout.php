@@ -1,6 +1,6 @@
 <?php
     session_start();
-     $_SESSION['userId'] = "bruh";
+     $_SESSION['error'] = true;
      header("Location: login.php");
      exit;
 ?>

@@ -39,7 +39,9 @@
                     echo "<p class='error' style='background-color: red;
                     text-align: center;padding-left:30%; padding-right:30%;'> Password or Email Incorrect </p>";
                 }else{
-                    
+                    echo"<script language='javascript'>
+                    var element = document.getElelemtByClassName('error');
+                    </script>";
                 }
                }
                

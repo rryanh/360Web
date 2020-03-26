@@ -1,6 +1,7 @@
 
 <?php
 session_start();
+    //connect to DB
     $servername = 'localhost';
     $username = 'db_admin';
     $password = 'test';
@@ -17,8 +18,9 @@ session_start();
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
+                // if login correct store vars in session
                 if ( $row["Email"] == $email &&  $row["Password"] == $pass){
-                    $_SESSION['userId'] = $email;
+                   // $_SESSION['userId'] = $email;
                     echo "Bruh";
                     $error = false;
                     $_SESSION['error'] = $error;

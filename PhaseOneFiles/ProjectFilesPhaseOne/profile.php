@@ -7,38 +7,43 @@
 <html lang="en">
 <?php
     session_start();
-    if( isset($_SESSION['error'])){
-         $email = $_SESSION['userId'];
+    // checks if your logged in
+    if( isset($_SESSION['error']) && $_SESSION['error'] != true ){
+         $email = $_SESSION['email'];
+         $pass = $_SESSION['pass'];
         // echo $email;
-    }
-    $servername = 'localhost';
-    $username = 'db_admin';
-    $password = 'test';
-    $dbname ="360web";
-    try {
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-       /// echo 'Connected to database';
-        
-        $sql = ("SELECT * FROM user WHERE Email='$email'");
-        $result = $conn->query($sql);
-        if ($result->num_rows > 0) {
-           
-            while($row = $result->fetch_assoc()) {
-                $First = $row['First'];
-                $Last =  $row['Last'];
-                $Country =  $row['Country'];
-                $Gender =  $row['Gender'];
-                $Day =   $row['Day'];
-                $Month =   $row['Month'];
-                $Year =  $row['Year'];
-                $dn =  $row['Display_Name'];
+    
+        $servername = 'localhost';
+        $username = 'db_admin';
+        $password = 'test';
+        $dbname ="360web";
+        try {
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
             }
+        /// echo 'Connected to database';
+            // get user info 
+            $sql = ("SELECT * FROM user WHERE Email='$email'");
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    $First = $row['First'];
+                    $Last =  $row['Last'];
+                    $Country =  $row['Country'];
+                    $Gender =  $row['Gender'];
+                    $Day =   $row['Day'];
+                    $Month =   $row['Month'];
+                    $Year =  $row['Year'];
+                    $dn =  $row['Display_Name'];
+                }
+            }
+        }catch(PDOException $e){
+        echo $e->getMessage();
         }
-    }catch(PDOException $e){
-    echo $e->getMessage();
+    }else{
+        header("Location: login.php");
+        exit;
     }
 
 ?>
@@ -59,9 +64,9 @@
             <div id="settings">
                 <nav>
                     <ul>
-                        <li class="current"><a href="profile.html" class="current">Profile</a></li>
+                        <li class="current"><a href="profile.php" class="current">Profile</a></li>
                         <li><a href="settings.html">Settings</a></li>
-                        <li><a href="home.html">Logout</a></li>
+                        <li><a href="logout.php">Logout</a></li>
                     </ul>
                 </nav>
             </div>
