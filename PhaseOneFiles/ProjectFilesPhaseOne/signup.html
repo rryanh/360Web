@@ -24,26 +24,26 @@
                     <legend>Personal Information</legend>
                     <p>
                         <label>First Name:</label>
-                        <input type="text" name="firstname"/>
+                        <input required id="fname" type="text" name="firstname"/>
                         <label>Last Name:</label>
-                        <input type="text" name="lastname"/><br>
+                        <input required id="lastname"type="text" name="lastname"/><br>
                     </p>
                     <p>
                         <label>Display Name:</label>
-                        <input type="text" name="displayname"> (This is the name that will be displayed when you post, comment, etc.)<br>
+                        <input required id="displayname"type="text" name="displayname"> (This is the name that will be displayed when you post, comment, etc.)<br>
                     </p>
                     <p>
                         <label>Email:</label>
-                        <input type="text" name="email" pattern="[^ @]*@[^ @]*" required><br>
+                        <input required id="email"type="text" name="email" pattern="[^ @]*@[^ @]*" required><br>
                         <label>Password:</label>
-                        <input type="password" name="password"><br>
+                        <input required id="pass" type="password" name="password"><br>
                         <label>Confirm Password:</label>
-                        <input type="password" name="confirm-password"><br>
+                        <input required id="pass1"  type="password" name="confirm-password"><br>
                     </p>
                     <p>
                         <label>Date of Birth:</label><br>
-                        <select name="month">
-                            <option>Month</option>
+                        <select required name="month">
+                            <option value=""></option>
                             <option>January</option>
                             <option>February</option>
                             <option>March</option>
@@ -57,8 +57,8 @@
                             <option>November</option>
                             <option>December</option>
                         </select>
-                        <select name="day">
-                            <option>Day</option>
+                        <select required name="day">
+                            <option value=""></option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -91,8 +91,8 @@
                             <option>30</option>
                             <option>31</option>
                         </select>
-                        <select name="year">
-                            <option>Year</option>
+                        <select required name="year">
+                            <option value=""></option>
                             <option>2007</option>
                             <option>2006</option>
                             <option>2005</option>
@@ -185,8 +185,9 @@
                     </p>
                     <p>
                         <label>Country:</label>
-                        <select name="country">
-                            <option>Choose a Counrty</option>
+                        <select required name="country">
+                            <option value=""></option>
+                        
                             <option>Austrailia</option>
                             <option>Canada</option>
                             <option>China</option>
@@ -201,8 +202,9 @@
                     </p>
                     <p>
                         <label>Gender:</label>
-                        <select name="gender">
-                            <option>Select a Gender</option>
+                        <select required name="gender">
+                            <option value=""></option>
+                            
                             <option>Female</option>
                             <option>Male</option>
                             <option>Rather not say</option>
@@ -212,10 +214,10 @@
                         <input type="text" name="other">
                     </p>
                     <p>
-                        <input type="checkbox" name="terms" value="terms"> I agree to the Terms and Agreements.<br>
+                        <input required type="checkbox" name="terms" value="terms"> I agree to the Terms and Agreements.<br>
                     </p>
                     <p>
-                    <input type="submit" value="Create Account" name="create-account">
+                    <input   type="submit" value="Create Account" name="create-account">
                     </p>
                 </fieldset>
             </form>

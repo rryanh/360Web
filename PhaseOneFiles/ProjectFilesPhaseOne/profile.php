@@ -65,7 +65,7 @@
                 <nav>
                     <ul>
                         <li class="current"><a href="profile.php" class="current">Profile</a></li>
-                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="settings.php">Settings</a></li>
                         <li><a href="logout.php">Logout</a></li>
                     </ul>
                 </nav>

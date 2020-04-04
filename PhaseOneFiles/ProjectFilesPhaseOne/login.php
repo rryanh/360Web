@@ -23,9 +23,9 @@
                 <fieldset>
                     <legend>Login</legend>
                     <label>Email:</label><br>
-                    <input type="text" name="email" placeholder="someone@example.com"><br>
+                    <input required type="text" name="email" placeholder="someone@example.com"><br>
                     <label>Password:</label><br>
-                    <input type="password" name="password"><br>
+                    <input required type="password" name="password"><br>
                     <input type="submit" value="Log in" name="login">
                     <p class="linked">Forget your password? <a href="forgot-password.html">Click Here</a></p>
                     <p class="linked">Don't have an account? <a href="signup.html">Create One</a>!</p>

@@ -48,38 +48,17 @@
                         </p> 
                     </div>
                     
-                        <a class="action1" href="comment.php">comment</a>
-                        <a class="action1" href="">report</a>
+                     
                     
                 </div>
-                <div id="commentchain">
+                <div >
                     
-                    <div class="comment">
-                        <div id="title">
-                            <img id="img1" src="images/carson-profile-image.png" height="50" width="50">
-                            <a href="profile.php"><h3>Carson_Perreaux</h3></a>
-                            <p id="posted">   jan 2, 2020 11:31</p>
-                        </div>
-                        <p class="test">Lorem Ipsum is simply dummy text or since the 1500s, when an u to make a type specimen book. It has survived not only five ce
-                            nturies, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960
-                            s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing so
-                            ftware like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                         
-                            <a class="action1" href="">report</a>
+                    <div >
+                        <form id="comment" action="discussion-info.html">
+                            <input id="comment" type="text" name="text">
+                        </form>
                     </div>
-                    <div class="comment">
-                        <div id="title">
-                            <img id="img1" src="images/profile-outline.png" height="50" width="50">
-                            <h3>John_Apples</h3>
-                            <p id="posted">   jan 2, 2020 11:31</p>
-                        </div>
-                        <p class="test">Lorem Ipsum is simply dummbled it to make a type scenturies, but also the leap into electronic typesetting, remaining essent
-                            ially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
-                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            
-                            <a class="action1" href="">report</a>
-                    </div>
-                
+                   
                 </div>
             </div>
         

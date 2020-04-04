@@ -25,7 +25,8 @@
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                echo "email: " . $row["Email"]. "<br>";
+                header("Location: login.php");
+                exit;
             }   
         }else{
             $sql = "INSERT INTO user (Email,Password,Display_Name,First,Last,Country,Gender,Day,Month,Year) 
